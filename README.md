@@ -13,6 +13,16 @@ A modern, responsive web application for browsing and watching videos from a You
 - 🔒 Secure HTTPS deployment
 - 🎨 Modern UI with Tailwind CSS
 
+## Screenshots
+
+| Home Page | Video Player |
+|-----------|--------------|
+| ![Home Page](docs/assets/home.png) | ![Video Player](docs/assets/player.png) |
+
+| Playlists Page |
+|----------------|
+| ![Playlists Page](docs/assets/playlists.png) |
+
 ## Tech Stack
 
 - **Frontend**: React 19, TypeScript, Vite

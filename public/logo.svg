@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rainbow border circle -->
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#feca57;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#48dbfb;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#1dd1a1;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#ee5a6f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c44569;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer rainbow circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="url(#rainbow)" stroke-width="10"/>
+  
+  <!-- White background -->
+  <circle cx="100" cy="100" r="85" fill="white"/>
+  
+  <!-- Colorful text -->
+  <text x="100" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ff6b6b">KIDS</text>
+  <text x="100" y="110" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#48dbfb">ARTS &</text>
+  <text x="100" y="135" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1dd1a1">LEARN</text>
+  
+  <!-- Small decorative elements -->
+  <circle cx="50" cy="50" r="5" fill="#feca57"/>
+  <circle cx="150" cy="50" r="5" fill="#ee5a6f"/>
+  <circle cx="50" cy="150" r="5" fill="#48dbfb"/>
+  <circle cx="150" cy="150" r="5" fill="#1dd1a1"/>
+</svg>

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(to right, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #ee5a6f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-4px);
+  }
+  
+  .rainbow-gradient {
+    background: linear-gradient(135deg, 
+      #ff6b6b 0%,
+      #feca57 20%,
+      #48dbfb 40%,
+      #1dd1a1 60%,
+      #ee5a6f 80%,
+      #c44569 100%
+    );
+  }
+  
+  .rainbow-border {
+    border-image: linear-gradient(135deg, 
+      #ff6b6b,
+      #feca57,
+      #48dbfb,
+      #1dd1a1,
+      #ee5a6f
+    ) 1;
+  }
+}
+
+

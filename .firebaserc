@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "default",
+    "test": "viewer-de70c"
+  },
+  "targets": {},
+  "etags": {}
+}

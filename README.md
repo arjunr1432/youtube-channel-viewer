@@ -2,6 +2,8 @@
 
 A modern, responsive web application for browsing and watching videos from the **[KidsArtsLearn](https://www.youtube.com/@KidsArtsLearn)** YouTube channel. Built with React, TypeScript, and Vite, deployed on Google Firebase Hosting.
 
+**🔴 [Live Demo](https://viewer-de70c.web.app/)** | **👍 [Subscribe to KidsArtsLearn](https://www.youtube.com/@KidsArtsLearn?sub_confirmation=1)**
+
 ## Features
 
 - 📺 Browse recent videos from a YouTube channel

@@ -2,40 +2,41 @@
 
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(to right, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #ee5a6f);
+    background: linear-gradient(to right, #a78bfa, #c4b5fd, #8b5cf6, #7c3aed);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   
   .card-hover {
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .card-hover:hover {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 25px -5px rgba(124, 77, 255, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
     transform: translateY(-4px);
   }
   
-  .rainbow-gradient {
+  .starlight-gradient {
     background: linear-gradient(135deg, 
-      #ff6b6b 0%,
-      #feca57 20%,
-      #48dbfb 40%,
-      #1dd1a1 60%,
-      #ee5a6f 80%,
-      #c44569 100%
+      #2e1065 0%,
+      #4c1d95 30%,
+      #1e1b4b 60%,
+      #0f172a 100%
     );
   }
   
-  .rainbow-border {
+  .starlight-border {
     border-image: linear-gradient(135deg, 
-      #ff6b6b,
-      #feca57,
-      #48dbfb,
-      #1dd1a1,
-      #ee5a6f
+      #a78bfa,
+      #8b5cf6,
+      #7c3aed
     ) 1;
+  }
+
+  .nav-blur {
+    backdrop-filter: blur(12px);
+    background-color: rgba(15, 7, 32, 0.7);
   }
 }
 

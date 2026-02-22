@@ -12,15 +12,15 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="rainbow-gradient text-white mt-auto shadow-2xl">
+    <footer className="bg-black/60 border-t border-white/10 text-white mt-auto shadow-2xl nav-blur">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <div className="flex items-center justify-center md:justify-start mb-2">
-              <img 
-                src="/logo.png" 
+              <img
+                src="/icon.png"
                 alt={channelName}
-                className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white shadow-lg mr-3 object-cover"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-xl shadow-lg mr-3 object-cover"
                 onError={(e) => {
                   // Fallback to SVG logo if PNG doesn't exist
                   e.currentTarget.src = '/logo.svg';

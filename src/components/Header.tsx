@@ -13,23 +13,21 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="rainbow-gradient shadow-2xl sticky top-0 z-50">
+    <header className="bg-black/40 nav-blur shadow-2xl sticky top-0 z-50 border-b border-white/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24 md:h-28">
           {/* Logo/Brand */}
           <Link to="/" className="flex items-center space-x-3 text-white hover:opacity-90 transition-opacity">
-            <img 
-              src="/logo.png" 
+            <img
+              src="/icon.png"
               alt={channelName}
-              className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-lg object-cover"
-              onError={(e) => {
-                // Fallback to SVG logo if PNG doesn't exist
-                e.currentTarget.src = '/logo.svg';
+              className="w-16 h-16 md:w-20 md:h-20 rounded-2xl shadow-lg object-cover"
+              onError={() => {
               }}
             />
             <div className="flex flex-col">
-              <span className="text-xl md:text-3xl font-black tracking-tight drop-shadow-lg">{channelName}</span>
-              <span className="text-xs md:text-sm font-semibold opacity-90">Educational Videos for Kids</span>
+              <span className="text-xl md:text-3xl font-black tracking-tight text-white drop-shadow-[0_2px_10px_rgba(167,139,250,0.5)]">{channelName}</span>
+              <span className="text-xs md:text-sm font-semibold text-purple-200">Bedtime Stories & Adventures</span>
             </div>
           </Link>
 

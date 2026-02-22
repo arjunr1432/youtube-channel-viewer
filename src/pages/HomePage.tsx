@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { youtubeService } from '../services/youtubeService';
-import { VideoGrid, LoadingSkeleton, ErrorDisplay } from '../components';
+import { VideoGrid, LoadingSkeleton, ErrorDisplay, ChannelBanner } from '../components';
 
 export default function HomePage() {
   // Fetch recent videos using React Query
@@ -24,12 +24,13 @@ export default function HomePage() {
 
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
-          <span className="gradient-text">Recent Videos</span>
+      <ChannelBanner />
+      <div className="mb-10">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <span className="gradient-text">Magic Library</span>
         </h1>
-        <p className="text-gray-600 text-lg">
-          🎬 Check out the latest uploads from the channel
+        <p className="text-purple-200/80 text-lg md:text-xl font-medium max-w-2xl">
+          🎬 Explore our latest bedtime stories and magical adventures.
         </p>
       </div>
 

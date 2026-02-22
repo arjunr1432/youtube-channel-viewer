@@ -117,13 +117,12 @@ class YouTubeService {
 
       if (response.data.items && response.data.items.length > 0) {
         this.channelName = response.data.items[0].snippet.title;
-        return this.channelName || 'Kids Arts & Learn';
+        return this.channelName || import.meta.env.VITE_APP_TITLE || 'YouTube Channel Viewer';
       }
-
-      return 'Kids Arts & Learn';
+      return import.meta.env.VITE_APP_TITLE || 'YouTube Channel Viewer';
     } catch (error) {
       console.error('Failed to fetch channel name:', error);
-      return 'Kids Arts & Learn';
+      return import.meta.env.VITE_APP_TITLE || 'YouTube Channel Viewer';
     }
   }
 

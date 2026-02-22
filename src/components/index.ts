@@ -9,3 +9,4 @@ export { default as PlaylistCard } from './PlaylistCard';
 export { default as PlaylistGrid } from './PlaylistGrid';
 export { default as LoadingSkeleton } from './LoadingSkeleton';
 export { default as ErrorDisplay } from './ErrorDisplay';
+export { default as ChannelBanner } from './ChannelBanner';

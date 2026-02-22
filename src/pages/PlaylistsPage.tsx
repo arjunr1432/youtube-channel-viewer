@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { youtubeService } from '../services/youtubeService';
-import { PlaylistGrid, LoadingSkeleton, ErrorDisplay } from '../components';
+import { PlaylistGrid, LoadingSkeleton, ErrorDisplay, ChannelBanner } from '../components';
 
 export default function PlaylistsPage() {
   // Fetch playlists using React Query
@@ -18,12 +18,13 @@ export default function PlaylistsPage() {
 
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
-          <span className="gradient-text">Playlists</span>
+      <ChannelBanner />
+      <div className="mb-10">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <span className="gradient-text">Story Collections</span>
         </h1>
-        <p className="text-gray-600 text-lg">
-          📋 Explore curated collections of videos
+        <p className="text-purple-200/80 text-lg md:text-xl font-medium max-w-2xl">
+          📋 Browse our curated collections of bedtime tales and learning series.
         </p>
       </div>
 

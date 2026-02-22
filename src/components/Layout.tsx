@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 export default function Layout() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="flex flex-col min-h-screen bg-[#0f0720] text-gray-100">
       <Header />
       <main className="flex-1 container mx-auto px-4 py-8">
         <Outlet />
